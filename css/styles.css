@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; 
+    position: fixed;
+    width: 100%;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: linear-gradient(45deg, #1a1a1a, #333, #1a1a1a, #666);
+    background-size: 400% 400%;
+    animation: colorChange 5s ease infinite;
+}
+
+@keyframes colorChange {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+h1, h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.8em;
+    animation: slideIn 1s;
+}
+
+h2 {
+    font-size: 2.2em;
+    margin-top: 20px;
+    animation: slideIn 1s;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #ddd;
+    animation: fadeIn 1s;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100px); opacity: 1; }
+    100% { transform: translateY(calc(100vh + 100px)); opacity: 0; }
+}
