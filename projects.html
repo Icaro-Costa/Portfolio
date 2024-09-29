@@ -1,12 +1,23 @@
-<link rel="stylesheet" href="./css/projects.css">
+<link rel="stylesheet" href="./css/projects.css">       
 <link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/navegaçao.css">
 <link rel="shortcut icon" href="./icon/ico.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <h2 id="projects">Projetos</h2>
+
 <ul class="projects">
+    
     <div class="nav">
-        <a href="index.html?page=about">Eu</a>
-        <a href="projects.html?page=projects">Projetos</a>
-        <a href="curiosidades.html">Curiosidades</a>  
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu" id="menu">
+       <a href="index.html?page=about"><i class="fa fa-home"></i> Home</a>
+            <a href="curiosidades.html"><i class="fa fa-lightbulb"></i> Curiosidades</a> 
+        </div>
     </div>
     <li><strong>Sistema de Escola:</strong>
         O projeto consiste em desenvolver um programa para a TI
@@ -19,11 +30,20 @@
         informações e visualizar relatórios gerais.O programa foi
         feito em C usando ferramentas como Dev-Cpp e Vcode
     </li>
-    <li><strong> <a class="meu-link" href="game.html?page=game">Minhoca:</a></strong>Criei um jogo da cobrinha em
-        JavaScript, e a cobrinha joga sozinha. Ele está pronto e
-        disponível para você ver so clicar no nome em azul.</li>
-    <li>Se caso deseja ver mais projetos meus voce pode visitar meu
+    <li>  <a href="./game.html" class="meu-link" ><strong>Minhoca:</strong> </a>
+        Fiz um jogo em JavaScript, que a cobrinha joga sozinha. Ele está pronto e
+        disponível para você ver so clicar no nome em azul.
+    </li>
+   
+        <li>Se caso deseja ver mais projetos meus voce pode visitar meu
         github
         <a href="https://github.com/Icaro-Costa" class="meu-link">Icaro-Costa</a>
     </li>
 </ul>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('show');
+    }
+</script>
+<script src="./js/scrips.js"></script>

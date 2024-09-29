@@ -3,8 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     overflow-x: hidden; 
-    position: fixed;
-    width: 100%;
+    overflow: hidden; /* Altere para hidden */
 }
 
 body {
@@ -48,11 +47,17 @@ p {
     color: #ddd;
     animation: fadeIn 1s;
 }
-
+a {
+    color: #1de9b6; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative; /* Alterado para 'relative' */
     width: 100%;
     background: #333;
     padding: 15px 20px;

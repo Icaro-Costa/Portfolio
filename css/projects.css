@@ -1,54 +1,29 @@
-
-.nav {
-    background: linear-gradient(90deg, rgba(30, 30, 30, 0.9), rgba(60, 60, 60, 0.9));
-    color: #fff;
-    padding: 10px 20px;
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 1000;
-    transition: background 0.3s;
-    animation: slideIn 0.5s ease forwards;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; 
 }
 
-.nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 4px;
-    position: relative;
-    overflow: hidden;
-}
-
-.nav a::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 3px;
-    background: #f0f0f0;
-    transition: width 0.4s ease, left 0.4s ease;
-}
-
-.nav a:hover::after {
-    width: 100%;
-    left: 0;
-}
-
-.nav a:hover {
-    background: rgba(255, 255, 255, 0.2);
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
     color: #f0f0f0;
-    transform: translateY(-2px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: linear-gradient(45deg, #1a1a1a, #333, #1a1a1a, #666);
+    background-size: 400% 400%;
+    animation: colorChange 5s ease infinite;
 }
+
+@keyframes colorChange {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
 
 .container {
     margin-bottom: 80px;
@@ -103,6 +78,7 @@
 .meu-link:visited {
     color: #1de9b6;
 }
+
 a:hover {
     color: #ffffff; 
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
@@ -147,6 +123,7 @@ a:hover {
 
     .nav a {
         margin: 10px 0; 
+        font-size: 16px; /* Ajuste do tamanho da fonte */
     }
 
     .container {
@@ -157,7 +134,7 @@ a:hover {
 
 @media (max-width: 480px) {
     .nav a {
-        font-size: 16px; 
+        font-size: 14px; /* Reduzido para telas menores */
         padding: 8px 10px; 
     }
 

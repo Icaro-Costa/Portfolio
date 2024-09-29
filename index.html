@@ -7,34 +7,50 @@
     <title>Portfólio</title>
     <link rel="stylesheet" href="./css/styles.css">  
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/navegaçao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head> 
 <body>
-    <div class="nav">
-        <a href="index.html?page=about">Home</a>
-        <a href="projects.html?page=projects">Projetos</a>
-        <a href="curiosidades.html">Curiosidades</a>     
-    </div>
 
+<div class="nav">
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="projects.html?page=projects"><i class="fa fa-briefcase"></i> Projetos</a>
+        <a href="curiosidades.html?page=curiosidades"><i class="fa fa-lightbulb"></i> Curiosidades</a>
+    </div>
+</div>
+
+    
+    </div>
     <div class="img-container">
         <img src="./img/163467778.jpg" alt="Icaro foto">
     </div> 
-        <h1>Olá, meu nome é Icaro Costa!</h1>
+    <h1>Olá, meu nome é Icaro Costa!</h1>
     <p>
-         Sou estudante de Análise e Desenvolvimento de Sistemas. 
-         Sempre tive uma afinidade especial com a área de
-         tecnologia. 
-         Nos momentos livres, dedico-me a projetos próprios. 
-         Tenho uma paixão ardente por aprender constantemente
-         sobre tecnologia e suas inovações.
+        Sou estudante de Análise e Desenvolvimento de Sistemas. 
+        Sempre tive uma afinidade especial com a área de
+        tecnologia. 
+        Nos momentos livres, dedico-me a projetos próprios. 
+        Tenho uma paixão ardente por aprender constantemente
+        sobre tecnologia e suas inovações.
     </p>
-         <h2>Meus contatos</h2>
-
+    <h2>Meus contatos</h2>
     <p>Se você deseja entrar em contato comigo, pode me enviar um
-    e-mail para: <a href="mailto:icaroleo486@gmail.com">icaroleo486@gmail.com</a>
-    <br>Se quiser pode mandar uma mensagem no whatsapp <a href="http://wa.me/558191192718">(81) 9119-2718</a><br>
+        e-mail para: <a href="mailto:icaroleo486@gmail.com">icaroleo486@gmail.com</a>
+        <br>Se quiser pode mandar uma mensagem no whatsapp: <a href="http://wa.me/558191192718">(81) 9119-2718</a><br>
     </p>
   
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
     <script src="./js/scrips.js"></script>
-
 </body>
 </html>
