@@ -10,10 +10,32 @@
 
 </head>
 <body>
-    <div class="nav">
-        <a href="projects.html?page=projects"><i class="fa fa-briefcase"></i> Projetos</a>
-        <a href="index.html?page=about"><i class="fa fa-home"></i> Home</a>
+   
+    <div class="nav" >
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="index.html?page=about"><i class="fa fa-home"></i> Home</a>   
+        <a href="projects.html?page=projects"><i class="fa fa-briefcase"></i> Projetos</a>     
     </div>
     
+
+
+
+  
+   
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+    <script src="./js/scrips.js"></script>
+
+</div>
 </body>
 </html>

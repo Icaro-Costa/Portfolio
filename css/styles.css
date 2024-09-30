@@ -9,12 +9,12 @@ html, body {
 body {
     font-family: 'Helvetica Neue', sans-serif;
     line-height: 1.6;
-    color: #f0f0f0;
+    color: #f0f0f0; 
     display: flex;
     flex-direction: column;
     align-items: center;
     scroll-behavior: smooth;
-    background: linear-gradient(45deg, #1a1a1a, #333, #1a1a1a, #666);
+    background: linear-gradient(45deg, #1a1a1a, #000000, #1a1a1a, #000000);
     background-size: 400% 400%;
     animation: colorChange 5s ease infinite;
 }

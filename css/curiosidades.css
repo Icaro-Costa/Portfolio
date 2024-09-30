@@ -1,0 +1,18 @@
+/* Estilo para o container */
+div {
+    display: flex;                /* Usar flexbox para disposição das imagens */
+    align-items: flex-start;     /* Alinhar as imagens no topo */
+    justify-content: space-between; /* Espaçar as imagens uniformemente */
+    margin: 20px;                /* Margem externa para o container */
+}
+
+/* Estilo para as imagens */
+img {
+    border-radius: 8px;          /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+/* Estilo adicional para a imagem do pinguim */
+img[src*="dance.gif"] {
+    margin-left: 10px;           /* Margem à esquerda para a imagem do pinguim */
+}
