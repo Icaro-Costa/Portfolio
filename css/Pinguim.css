@@ -3,7 +3,7 @@ body, html {
     height: 100%;
 }
 
-.video-container {
+.video-tv {
     position: fixed;
     top: 0;
     left: 0;
@@ -18,3 +18,29 @@ video {
     height: 100%;
     object-fit: cover; /* Faz com que o vídeo cubra toda a área */
 }
+
+/* Fim*/
+
+
+#binary-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: lime; /* Cor do texto binário */
+    font-family: monospace; /* Fonte monoespaçada para melhor visualização */
+    overflow: hidden;
+}
+
+.content {
+    display: none;
+    position: relative;
+    z-index: 1; /* Para garantir que o conteúdo esteja acima do fundo binário */
+    color: white; /* Cor do texto do conteúdo */
+    text-align: center;
+    margin-top: 20%; /* Para centralizar verticalmente */
+}
+
+
+/*Fim*/
