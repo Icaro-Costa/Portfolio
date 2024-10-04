@@ -1,46 +1,33 @@
-body, html {
-    margin: 0;
-    height: 100%;
-}
-
-.video-tv {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-}
-
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Faz com que o vídeo cubra toda a área */
-}
-
-/* Fim*/
-
-
 #binary-background {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    color: lime; /* Cor do texto binário */
-    font-family: monospace; /* Fonte monoespaçada para melhor visualização */
+    color: lime;
+    font-family: monospace; 
     overflow: hidden;
 }
 
 .content {
     display: none;
     position: relative;
-    z-index: 1; /* Para garantir que o conteúdo esteja acima do fundo binário */
-    color: white; /* Cor do texto do conteúdo */
+    z-index: 1;
+    color: white; 
     text-align: center;
-    margin-top: 20%; /* Para centralizar verticalmente */
+    margin-top: 20%; 
 }
 
+/* Estilo para centralizar o iframe */
+body {
+    margin: 0;
+    height: 100vh; /* Faz com que o corpo ocupe toda a altura da janela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
 
-/*Fim*/
+#video-frame {
+    position: relative; /* Para controle de empilhamento */
+    z-index: 2; /* Aumenta o índice para ficar acima de .content */
+}
