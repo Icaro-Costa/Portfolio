@@ -6,15 +6,27 @@
     <link rel="shortcut icon" href="./icon/linux.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/Pinguim.css">
     <link rel="stylesheet" href="./css/styles.css">  
+    <link rel="stylesheet" href="./css/navegaçao.css">
     <title>Pinguim</title>
 </head>
 <body>
     <div id="binary-background"></div>
-    <div id="video-frame" >
-  
+    <div id="video-frame">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/gUQy97IqulE?si=fUi3O6ZrjXSMi7rm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
     </div>
+
+    <div class="nav" >
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu" id="menu">
+            <a href="projects.html?page=projects"><i class="fa fa-briefcase"></i> Projetos</a>
+        </div>
+    </div>
+
     <script src="./js/Pinguim.js"></script>
+  <script src="./js/scrips.js"></script>
 </body>
 </html>
