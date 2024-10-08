@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-container {
+    max-width: 1000px; /* Largura total para caber duas colunas */
+    margin: 50px auto;
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno para deixar mais arejado */
+    border: 1px solid #1de9b6; /* Opcional: adicione uma borda para destacar */
+    border-radius: 8px; /* Opcional: arredondar bordas */
+    background-color: rgba(30, 30, 30, 0.8); /* Opcional: fundo levemente transparente */
+}
+
+h1 {
+    color: #1de9b6;
+    font-size: 2em; /* Aumenta o tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para o texto */
+}
+
+.skills-grid {
+    display: flex; /* Flexbox para duas colunas */
+    flex-wrap: nowrap; /* Não permitir quebra de linha */
+    overflow: auto; /* Permitir rolagem horizontal se necessário */
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    flex: 1; /* Cada lista ocupa o mesmo espaço */
+    margin: 0 10px; /* Espaçamento entre as listas */
+    min-width: 150px; /* Largura mínima para evitar quebra */
+}
+.skills-list li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Impede a quebra de linha no item */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse */
+    text-overflow: ellipsis; /* Exibe '...' se o texto for muito longo */
+    padding: 0 10px; /* Adiciona espaçamento lateral para evitar corte do texto */
+}
+
+
+.icon {
+    margin-right: 10px;
+    font-size: 1.5em; /* Tamanho do ícone */
+}
+
+/* Cores dos ícones */
+.fab.fa-html5 { color: #E44D26; }
+.fab.fa-css3-alt { color: #1572B6; }
+.fab.fa-js { color: #F7DF1E; }
+.fas.fa-database { color: #003B5C; }
+.fas.fa-laptop-code { color: #7A7D7D; }
+.fas.fa-tools { color: #FFA500; }
+.fab.fa-python { color: #306998; }
+.fab.fa-php { color: #4F5B93; }
+.fas.fa-users { color: #1de9b6; }
+.fas.fa-book-open { color: #007BFF; }
+.fas.fa-lightbulb { color: #FFD700; }
+.fas.fa-brain { color: #6f42c1; }
+.fas.fa-wrench { color: #28a745; }
+.fas.fa-sync-alt { color: #17a2b8; }
+.fas.fa-shield-alt { color: #dc3545; }
